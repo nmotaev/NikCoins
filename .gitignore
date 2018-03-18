@@ -3,3 +3,4 @@
 /.dev/*.log
 /truffle/secrets.json
 node_modules
+/truffle/build/
