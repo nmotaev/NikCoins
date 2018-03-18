@@ -2,3 +2,4 @@
 .vagrant
 /.dev/*.log
 /truffle/secrets.json
+node_modules
