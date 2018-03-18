@@ -1,3 +1,4 @@
 .idea
 .vagrant
 /.dev/*.log
+/truffle/secrets.json
