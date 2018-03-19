@@ -14,12 +14,13 @@ contract TokenExchangeManager is Owned {
     }
 
     event ErrorDebug(string message);
+    event AddressDebug(address message);
 
-    function getTokenHandler() public mustBeActive view returns (address tokenAddress) {
+    function getTokenHandler() public view mustBeActive returns (address) {
         return tokenAddress;
     }
 
-    function getExchangeHandler() public mustBeActive view returns (address exchangeAddress) {
+    function getExchangeHandler() public view mustBeActive returns (address) {
         return exchangeAddress;
     }
 
