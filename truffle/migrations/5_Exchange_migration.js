@@ -1,4 +1,4 @@
-var Contract = artifacts.require("./TokenExchangeManager.sol");
+var Contract = artifacts.require("./Exchange.sol");
 
 module.exports = function(deployer) {
     deployer.deploy(Contract);
