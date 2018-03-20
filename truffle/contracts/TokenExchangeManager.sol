@@ -14,7 +14,6 @@ contract TokenExchangeManager is Owned {
     }
 
     event ErrorDebug(string message);
-    event AddressDebug(address message);
 
     function getTokenHandler() public view mustBeActive returns (address) {
         return tokenAddress;
