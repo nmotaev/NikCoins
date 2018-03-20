@@ -13,13 +13,18 @@ contract TokenExchangeManager is Owned {
         _;
     }
 
+    modifier onlyExchangeHandler {
+        require(msg.sender == exchangeAddress);
+        _;
+    }
+
     event ErrorDebug(string message);
 
-    function getTokenHandler() public view mustBeActive returns (address) {
+    function getTokenHandler() external view mustBeActive onlyExchangeHandler returns (address) {
         return tokenAddress;
     }
 
-    function getExchangeHandler() public view mustBeActive returns (address) {
+    function getExchangeHandler() external view mustBeActive returns (address) {
         return exchangeAddress;
     }
 
